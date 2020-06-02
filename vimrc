@@ -19,3 +19,16 @@ function! SearchNetrw(fname)
 endfunction
 
 autocmd VimEnter * com! -nargs=* -bar -bang -count=0 -complete=dir Explore execute "call netrw#Explore(<count>,0,0+<bang>0,<q-args>)" . ' | call SearchNetrw(' . string(expand('%:t')) . ')'
+
+" NERDTree configuration
+let NERDTreeQuitOnOpen=1
+
+function! NERDTreeToggleFind()
+    if g:NERDTree.IsOpen()
+        execute ':NERDTreeClose'
+    else
+        execute ':NERDTreeFind'
+    endif
+endfunction
+
+map <silent> <C-n> :call NERDTreeToggleFind()<CR>

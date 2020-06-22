@@ -32,3 +32,6 @@ function! NERDTreeToggleFind()
 endfunction
 
 map <silent> <C-n> :call NERDTreeToggleFind()<CR>
+
+" https://github.com/ggreer/the_silver_searcher
+let g:ackprg = 'ag --vimgrep'

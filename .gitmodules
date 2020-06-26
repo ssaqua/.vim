@@ -13,3 +13,6 @@
 [submodule "bundle/vim-endwise"]
 	path = bundle/vim-endwise
 	url = git://github.com/tpope/vim-endwise.git
+[submodule "bundle/darcula"]
+	path = bundle/darcula
+	url = https://github.com/doums/darcula.git

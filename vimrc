@@ -11,6 +11,9 @@ set nu
 
 colorscheme darcula
 
+set splitbelow
+nnoremap - :terminal ++rows=20<CR>
+
 let g:netrw_banner=0
 " netrw auto-focus current file
 " https://stackoverflow.com/a/29457190

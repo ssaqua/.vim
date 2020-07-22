@@ -16,3 +16,6 @@
 [submodule "bundle/darcula"]
 	path = bundle/darcula
 	url = https://github.com/doums/darcula.git
+[submodule "bundle/vim-test"]
+	path = bundle/vim-test
+	url = https://github.com/janko-m/vim-test

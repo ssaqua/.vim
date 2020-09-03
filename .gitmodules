@@ -19,3 +19,6 @@
 [submodule "bundle/vim-test"]
 	path = bundle/vim-test
 	url = https://github.com/janko-m/vim-test
+[submodule "bundle/ale"]
+	path = bundle/ale
+	url = https://github.com/dense-analysis/ale.git

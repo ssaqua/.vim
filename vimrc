@@ -10,6 +10,12 @@ set expandtab
 set nu
 
 colorscheme darcula
+
+hi! link GitGutterAdd GitAddStripe
+hi! link GitGutterChange GitChangeStripe
+hi! link GitGutterDelete GitDeleteStripe
+let g:gitgutter_sign_removed = '▶'
+
 hi! link ALEError Error
 hi! link ALEWarning CodeWarning
 hi! link ALEInfo CodeInfo

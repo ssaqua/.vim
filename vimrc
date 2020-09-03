@@ -10,6 +10,12 @@ set expandtab
 set nu
 
 colorscheme darcula
+hi! link ALEError Error
+hi! link ALEWarning CodeWarning
+hi! link ALEInfo CodeInfo
+hi! link ALEErrorSign ErrorSign
+hi! link ALEWarningSign WarningSign
+hi! link ALEInfoSign InfoSign
 
 set splitbelow
 nnoremap - :terminal ++rows=20<CR>
@@ -40,3 +46,9 @@ map <silent> <C-n> :call NERDTreeToggleFind()<CR>
 
 " https://github.com/ggreer/the_silver_searcher
 let g:ackprg = 'ag --vimgrep'
+
+" linting with vim-airline and ale
+let g:airline#extensions#ale#enabled = 1
+let g:ale_sign_column_always = 1
+let g:ale_linters_explicit = 1
+let g:ale_linters = {'ruby': ['rubocop']}
